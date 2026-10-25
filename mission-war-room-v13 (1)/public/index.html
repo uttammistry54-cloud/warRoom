@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gita Kshetra | Mission War Room</title>
+    <link rel="stylesheet" href="theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Serif+Devanagari:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Image -->
+    <div class="hero-background" aria-hidden="true" style="background-image: url('warRoom.png');"></div>
+
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="header-left">
+            <div class="logo-icon">❂</div>
+            <div class="brand-titles">
+                <h1>Gita Kshetra</h1>
+                <h2>Mission War Room</h2>
+                <p class="shloka">॥ यदा यदा हि धर्मस्य... ॥</p>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="commander-motto">॥ सत्यं वद | धर्मं चर ॥</div>
+            <div class="commander-profile">
+                <img src="acharya-prashant.jpg" alt="Commander" class="avatar">
+                <div class="commander-info">
+                    <span class="rank">Commander</span>
+                    <span class="name">Student of Acharya Prashant</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="layout-grid">
+        <!-- LEFT SIDEBAR: Navigation -->
+        <aside class="left-sidebar">
+            <nav class="nav-links">
+                <button class="active" onclick="navigateTo('overview')">
+                    <span class="icon">🏠</span> 
+                    <div class="nav-text">Home<small>कुरुक्षेत्र में पहली तैयारी</small></div>
+                </button>
+                <button onclick="enterRoom('training')">
+                    <span class="icon">📖</span> 
+                    <div class="nav-text">Training Room<small>स्वयं को प्रस्तुत करना</small></div>
+                </button>
+                <button onclick="enterRoom('theatre')">
+                    <span class="icon">⚔️</span> 
+                    <div class="nav-text">Mission Theatre<small>दुनिया का युद्धक्षेत्र</small></div>
+                </button>
+                <button onclick="navigateTo('tasks')">
+                    <span class="icon">📊</span> 
+                    <div class="nav-text">Situation Report<small>स्थिति का आकलन</small></div>
+                </button>
+                <button onclick="navigateTo('goals')">
+                    <span class="icon">📈</span> 
+                    <div class="nav-text">Strategy Log<small>रणनीति भित्ति</small></div>
+                </button>
+            </nav>
+            
+            <div class="bottom-quote">
+                "कर्मण्येवाधिकारस्ते<br>मा फलेषु कदाचन।"
+                <span class="quote-chapter">- 2:47</span>
+            </div>
+        </aside>
+
+        <!-- CENTER: Main Hero & Rooms -->
+        <main class="center-content">
+            <div class="hero-text-block">
+                <h2 class="english-motto">Not a Battle for Power,<br>But a War for Truth.</h2>
+                <p class="hindi-motto">अज्ञान | भ्रम | भय | और असत्य के विरुद्ध</p>
+            </div>
+
+            <div class="room-grid">
+                <!-- Room 01 -->
+                <article class="room-card" id="room-training" onclick="enterRoom('training')">
+                    <div class="room-content">
+                        <div class="room-header">
+                            <span class="room-icon">📖</span>
+                            <div>
+                                <span class="room-number">ROOM 01</span>
+                                <h3>प्रशिक्षण भूमि</h3>
+                            </div>
+                        </div>
+                        <p class="room-desc">अध्ययन, अनुशासन, आत्म-सुधार, शारीरिक और मानसिक शक्ति।</p>
+                        <button class="enter-btn">प्रवेश करें →</button>
+                    </div>
+                    <ul class="room-features">
+                        <li><span>✔</span> Study</li>
+                        <li><span>✔</span> Discipline</li>
+                        <li><span>✔</span> Health</li>
+                        <li><span>✔</span> Self-improvement</li>
+                    </ul>
+                </article>
+
+                <!-- Room 02 -->
+                <article class="room-card" id="room-theatre" onclick="enterRoom('theatre')">
+                    <div class="room-content">
+                        <div class="room-header">
+                            <span class="room-icon">⚔️</span>
+                            <div>
+                                <span class="room-number">ROOM 02</span>
+                                <h3>मिशन थिएटर</h3>
+                            </div>
+                        </div>
+                        <p class="room-desc">स्थिति, रणनीति, खतरे, अवसर, प्रभाव और अगली कार्रवाई।</p>
+                        <button class="enter-btn">प्रवेश करें →</button>
+                    </div>
+                    <ul class="room-features">
+                        <li><span>⚠️</span> Intelligence</li>
+                        <li><span>🎯</span> Strategy</li>
+                        <li><span>⚠️</span> Threats</li>
+                        <li><span>💡</span> Opportunities</li>
+                    </ul>
+                </article>
+            </div>
+        </main>
+
+        <!-- RIGHT SIDEBAR: Intelligence & Tasks -->
+        <aside class="right-sidebar">
+            <div class="top-quote-box">
+                "सत्य की ओर चलना ही जीवन का वास्तविक विजय है।"<br>
+                <span>- आचार्य प्रशांत</span>
+            </div>
+
+            <!-- Dashboard Widgets -->
+            <div class="widget">
+                <div class="widget-header">
+                    <h4>🎯 Mission Overview</h4>
+                    <span class="status-live">● Live</span>
+                </div>
+                <div class="mission-stats">
+                    <p>विश्व में सत्य तक पहुँचाना</p>
+                    <div class="progress-ring-container">
+                        <div class="progress-ring">12.4%</div>
+                        <div class="progress-text">
+                            <span>Current Reach (Estimated)</span>
+                            <strong>~ 99 Cr people</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Existing App Integration Panel -->
+            <div class="widget" id="overview-panel">
+                <div class="widget-header">
+                    <h4>⚠️ Active Operations (Tasks)</h4>
+                </div>
+                <div class="task-input-group">
+                    <input type="text" id="taskInput" placeholder="Enter tactical action..." aria-label="New Task">
+                    <button class="btn-primary" id="addTaskBtn">+</button>
+                </div>
+                <!-- Dynamic Tasks go here -->
+                <ul id="taskList" class="dynamic-list"></ul>
+            </div>
+            
+            <!-- Hidden goals for app.js compatibility -->
+            <div class="widget" id="goals-panel" style="display: none;">
+                <h4>Strategic Goals</h4>
+                <ul id="goalList" class="dynamic-list"></ul>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bottom-footer">
+        <span>Guided by Acharya Prashant</span> |
+        <span>Inspired by Bhagavad Gita</span> |
+        <span>For a Better World</span>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

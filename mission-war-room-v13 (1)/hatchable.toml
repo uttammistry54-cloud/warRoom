@@ -1,0 +1,5 @@
+# Hatchable project manifest. This file marks the folder as a
+# Hatchable project and declares the services it uses.
+# Reference: https://hatchable.com/docs/developers/config
+name = "Mission War Room"
+description = "A private personal command office for planning, tracking, and reflecting on nonviolent educational and content work inspired by Acharya Prashant and Geeta Samagam. No militarized actions, no automatic publishing, and separate from existing projects."
